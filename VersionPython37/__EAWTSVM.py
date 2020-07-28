@@ -3,10 +3,32 @@
 """
 Created on Tue Feb  4 16:23:09 2020
 
-@author: usuario
-"""
+@author: craljimenez@utp.edu.co, Cristian Alfonso Jimenez Castaño
+
+    C. Jimenez-Castaño, A. Alvarez-Meza, A. Orozco-Gutierrez,
+    Enhanced automatic twin support vector machine for imbalanced data classification,
+    Pattern Recognition,
+    Volume 107,
+    2020,
+    107442,
+    ISSN 0031-3203,
+    https://doi.org/10.1016/j.patcog.2020.107442.
+    (http://www.sciencedirect.com/science/article/pii/S0031320320302454)
+    Abstract: Most of the classification approaches assume that the sample distribution among classes is balanced. Still, such an assumption leads to biased performance over the majority class. This paper proposes an enhanced automatic twin support vector machine – (EATWSVM) to deal with imbalanced data, which incorporates a kernel representation within a TWSVM-based optimization. To learn the kernel function, we impose a Gaussian similarity, ruled by a Mahalanobis distance, and couple a centered kernel alignment-based approach to improving the data separability. Besides, we suggest a suitable range to fix the regularization parameters concerning both the dataset’ imbalance ratio and overlap. Lastly, we adopt One-vs-One and One-vs-Rest frameworks to extend our EATWSVM formulation for multi-class tasks. Obtained results on synthetic and real-world datasets show that our approach outperforms state-of-the-art methods concerning classification performance and training time.
+    Keywords: Imbalanced data; Kernel methods; Twin support vector machines
+
+reuirements:
+    cvxopt package
+    sklearn
+    qpsolvers package
+    scipy
+    numpy
+
+""" 
 
 #%% ********************************* import librariers *********************************
+
+
 import scipy.io as io
 import numpy as np
 # import Classes
