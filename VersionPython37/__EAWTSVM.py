@@ -133,7 +133,7 @@ class kernel:
             if kernfunction.lower() == 'lin' or kernfunction.lower() == 'linear':
                 K = np.dot(Y1,Y2.T)
             elif kernfunction.lower() == 'rbf':
-                K = np.exp(-.5*(cdist(Y1,Y2)**2)/(2*(kernparam**2)))
+                K = np.exp(-.5*(cdist(Y1,Y2)**2)/((kernparam**2)))
             elif kernfunction.lower() == 'nrbf' or kernfunction.lower() == 'gaussian':
                 K = (1/(np.sqrt(2*np.pi)*kernparam))*np.exp(-.5*(cdist(Y1,Y2)**2)/(2*(kernparam**2)))
             else:
